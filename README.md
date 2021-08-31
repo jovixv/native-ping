@@ -1,2 +1,2 @@
 # native-ping
-Native ping command by ICMP protocol. Writed on PHP. 
+Native ping command without any dependencies. Through ICMP protocol. Writed on PHP. 
