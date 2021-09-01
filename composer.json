@@ -10,7 +10,6 @@
       "email": "onesolomars@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
   "autoload": {
     "psr-4": {"jovixv\\Ping\\": "src/"}
   },
