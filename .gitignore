@@ -3,5 +3,6 @@
 .idea/php.xml
 .idea/modules.xml
 .idea/misc.xml
-vendor
 .idea/vcs.xml
+vendor
+public

@@ -1,12 +1,13 @@
 {
   "name": "jovixv/native-ping",
   "description": "Native ping command without any dependencies. Through ICMP protocol.",
+  "keywords": ["php","ping","icmp","native ping"],
   "type": "library",
   "license": "MIT",
   "authors": [
     {
       "name": "Vitaliy Lyabakh",
-      "email": "igrolan@gmail.com"
+      "email": "onesolomars@gmail.com"
     }
   ],
   "minimum-stability": "stable",

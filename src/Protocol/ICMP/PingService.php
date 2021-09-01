@@ -53,11 +53,11 @@ class PingService implements PingServiceContract
     public function ping(string $address, int $packageCount = 4): PingResponseEntity
     {
         $responseEntity = new PingResponseEntity();
+        $socket = $this->socketService->create();
         $sourceIP = null;
 
         for ($i=0; $i < $packageCount; $i++){
 
-            $socket = $this->socketService->create();
             $identity = [chr(ord('T')), chr(ord('B'))];
             $seq = [chr($i), chr($i + 1)];
 
@@ -156,7 +156,7 @@ class PingService implements PingServiceContract
             }
         }
 
-        $averageDelay = ($countOfValidPacket) ? $averageDelay / count($packets) : null;
+        $averageDelay = ($countOfValidPacket) ? $averageDelay / $countOfValidPacket : null;
 
         return $averageDelay;
     }
