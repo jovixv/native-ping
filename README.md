@@ -1,11 +1,10 @@
 # native-ping
 Native ping command without any dependencies. Through ICMP protocol. Writed on PHP.
 
-
-#install
+# install
 `composer require jovixv/native-ping`
 
-#Usage Example
+# Usage Example
 
 ```php
 include '../vendor/autoload.php';
