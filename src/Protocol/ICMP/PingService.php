@@ -74,7 +74,7 @@ class PingService implements PingServiceContract
 
             try{
                 $startTime = microtime(true);
-                $receivedData = $socket->send($packet, $address, 0, 0)->callSelect()->receive($address, 0);
+                $receivedData = $socket->send($packet, $address, 0, 0)->callSelect($this->timeout)->receive($address, 0);
                 $endTime = microtime(true);
 
                 $this->packetValidation($receivedData, $identity, $seq);
